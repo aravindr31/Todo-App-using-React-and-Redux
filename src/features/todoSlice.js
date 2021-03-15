@@ -15,9 +15,9 @@ const todoSlice = createSlice({
       state.todoList.map(item => {
         if (action.payload === item.itemId) {
           if (item.done === true) {
-           return (item.done = false);
+          item.done = false;
           } else {
-           return(item.done = true);
+          item.done = true;
           }
         }
       }
