@@ -1,0 +1,17 @@
+.todoItems{
+    display:flex;
+    align-items:center;
+    justify-content:start;
+    background-color:white;
+    padding:10px;
+    margin:5px;
+    width:90%;
+    border-radius:10px;
+}
+.todoItems >h2{
+    color: rgb(15, 11, 11);
+}
+.todoItem--done{
+    text-decoration: line-through red 2px solid;
+    
+}
