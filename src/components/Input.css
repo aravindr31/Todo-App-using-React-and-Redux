@@ -6,13 +6,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:10px;
     /* outline:2px solid black; */
 }
 input[type=text]{
     background: none;
     border: 0;
     flex: 1;
-    margin: 10px;
+
+    margin:10px; 
     outline: none;
     height:50px;
 }
