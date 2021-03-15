@@ -11,6 +11,7 @@ const todoSlice = createSlice({
     saveTodo: (state, action) => {
       state.todoList.push(action.payload);
     },
+    //eslint-disable-next-line
     saveCheck: (state, action) => {
       state.todoList.map(item => {
         if (action.payload === item.itemId) {
