@@ -14,13 +14,14 @@ const todoSlice = createSlice({
     saveCheck: (state, action) => {
       state.todoList.map(item => {
         if (action.payload === item.itemId) {
-          if (item.done = true) {
-            item.done = false;
+          if (item.done == true) {
+           return (item.done = false);
           } else {
-            item.done = true;
+           return(item.done = true);
           }
         }
-      });
+      }
+      );
     },
   },
 });
