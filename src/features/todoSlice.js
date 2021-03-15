@@ -11,7 +11,7 @@ const todoSlice = createSlice({
     saveTodo: (state, action) => {
       state.todoList.push(action.payload);
     },
-    //eslint-disable-next-line
+/* eslint-disable no-return-assign, no-param-reassign */
     saveCheck: (state, action) => {
       state.todoList.map(item => {
         if (action.payload === item.itemId) {
@@ -24,6 +24,7 @@ const todoSlice = createSlice({
       }
       );
     },
+/* eslint-enable no-return-assign, no-param-reassign */
   },
 });
 
