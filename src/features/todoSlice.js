@@ -13,21 +13,19 @@ const todoSlice = createSlice({
     },
 
     saveCheck: (state, action) => {
-      /* eslint-disable no-return-assign, no-param-reassign */
-      state.todoList.map(item => {
+      state.todoList.map((item) => {
         if (action.payload === item.itemId) {
           if (item.done === true) {
-          item.done = false;
+            item.done = false;
           } else {
-          item.done = true;
+            item.done = true;
           }
+          return (item.done);
         }
-      }
-      );
+      });
     },
   },
 });
-/* eslint-disable no-return-assign, no-param-reassign */
-export const { saveTodo,saveCheck } = todoSlice.actions;
+export const { saveTodo, saveCheck } = todoSlice.actions;
 export const selectTodoList = (state) => state.todos.todoList;
 export default todoSlice.reducer;
